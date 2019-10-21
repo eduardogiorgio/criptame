@@ -1,0 +1,20 @@
+<ion-header no-border>
+    <ion-navbar color="primary">
+      <ion-buttons right>
+        <button ion-button (click)="mostrarAyuda()">
+          <ion-icon name="help"></ion-icon>
+        </button>
+          <button ion-button (click)="compartirAplicacion()" hideWhen="core,mobileweb">
+            <ion-icon name="share"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-title>Criptame</ion-title>
+    </ion-navbar>
+  </ion-header>
+<ion-content>
+  <super-tabs #tabs toolbarBackground="primary" toolbarColor="light" indicatorColor="light" tabsPlacement="top">
+    <super-tab [root]="tab1Root" title="LLaves" icon=""></super-tab>
+    <super-tab [root]="tab2Root" title="Cifrar" icon=""></super-tab>
+    <super-tab [root]="tab3Root" title="Decifrar" icon=""></super-tab>
+  </super-tabs>
+</ion-content>

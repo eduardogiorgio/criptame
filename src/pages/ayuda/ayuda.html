@@ -1,0 +1,82 @@
+<!--
+  Generated template for the AyudaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Criptame</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="tutorial-page">
+  <ion-slides pager>
+    <ion-slide>
+        <ion-toolbar>
+          <ion-buttons end>
+            <button ion-button color="primary" (click)="dismiss()">Saltear</button>
+          </ion-buttons>
+        </ion-toolbar>
+        <img src="assets/imgs/logo.png" class="slide-image"/>
+        <h2 class="slide-title">Bienvenido a Criptame</h2>
+        <p>Una aplicacion pensada para mostrar el funcionamiento del cifrado asimetrico</p>
+      </ion-slide>
+      <ion-slide>
+        <ion-toolbar>
+          <ion-buttons end>
+            <button ion-button color="primary" (click)="dismiss()">Saltear</button>
+          </ion-buttons>
+        </ion-toolbar>
+        <img src="assets/imgs/paso1.png" class="slide-image"/>
+        <h2 class="slide-title">Genera las llaves</h2>
+        <p>Las llaves son el principio fundamental de la criptografía asimétrica</p>
+      </ion-slide>
+      <ion-slide>
+        <ion-toolbar>
+          <ion-buttons end>
+            <button ion-button color="primary" (click)="dismiss()">Saltear</button>
+          </ion-buttons>
+        </ion-toolbar>
+        <img src="assets/imgs/paso2.png" class="slide-image"/>
+        <h2 class="slide-title">Comparte tu llave publica</h2>
+        <p>Con ella tu amigo podrá encriptar algo que solo tu podrás entender</p>
+      </ion-slide>
+      <ion-slide>
+          <ion-toolbar>
+            <ion-buttons end>
+              <button ion-button color="primary" (click)="dismiss()">Saltear</button>
+            </ion-buttons>
+          </ion-toolbar>
+          <img src="assets/imgs/paso3.png" class="slide-image"/>
+          <h2 class="slide-title">Encriptar</h2>
+          <p>Tu amigo ahora pude encriptar el mensaje y enviártelo de manera segura</p>
+        </ion-slide>
+        <ion-slide>
+            <ion-toolbar>
+              <ion-buttons end>
+                <button ion-button color="primary" (click)="dismiss()">Saltear</button>
+              </ion-buttons>
+            </ion-toolbar>
+            <img src="assets/imgs/paso4.png" class="slide-image"/>
+            <h2 class="slide-title">Desencriptar</h2>
+            <p>Ahora solo tu puedes decifrar el mensaje que tu amigo encripto </p>
+          </ion-slide>
+      
+      <ion-slide>
+        <ion-toolbar>
+        </ion-toolbar>
+        <img src="assets/imgs/logo.png" class="slide-image"/>
+        <h2 class="slide-title">¿Estas listo?</h2>
+        <button ion-button large clear icon-end color="primary" (click)="dismiss()">
+          Continuar
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+      </ion-slide>
+    </ion-slides>
+</ion-content>
+

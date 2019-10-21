@@ -1,0 +1,43 @@
+<!--
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+-->
+<ion-content>
+    <ion-list>
+      <!--
+      <ion-list-header>Follow us on Twitter</ion-list-header>
+      <ion-item>
+        <ion-icon name="ionic" item-start></ion-icon>
+        @ionicframework
+      </ion-item>
+      -->
+      <ion-item>
+          <ion-label color="primary" stacked>Ingresa el texto a desencriptar</ion-label>
+          <ion-textarea rows="3" placeholder="eFF0meeJs4uPWrE2Q7Bzbr263dyx/fjxQLIuY+Igy+Y=" [(ngModel)]="textoDesencriptar" (press)="pegarTexto()"></ion-textarea>
+        </ion-item>
+      <ion-item>
+        <ion-label color="primary" stacked>Ingresa la llave privada</ion-label>
+        <ion-textarea rows="5" placeholder="-----BEGIN RSA PRIVATE KEY-----\nMIGqAgEAAiEAgb8phuC4oxsn8XXeXvXZfF27OdX/sPor9OpfVrxi3+sCAwEAAQIg\nfXPhK1FONiejz40wnpEI4BaQCQBa/6l03M4DTSVoF4ECEQDjRslao3zaD+tD3HtP\nYtz5AhEAkiTvn7P7e/l+3EHqSivRAwIQY6ksrmQ2YWDNp4pNQDh38QIRAIF/+1of\n6XO05MYWHp707rMCEEByyM65GYIJ9ETrNNuDZQg=
+        -----END RSA PRIVATE KEY-----" [(ngModel)]="llaveDesencriptar" (press)="pegarLLave()"></ion-textarea>
+      </ion-item>
+      <button ion-button full (click)="desencriptar()">
+        Desencriptar
+      </button> 
+      <ion-item>
+        <ion-label color="primary" stacked>El texto desencriptado es</ion-label>
+        <ion-textarea rows="3" placeholder="Se mostrar el texto desencriptado" [(ngModel)]="textoDesencriptado" (press)="copiarTexto()" readonly></ion-textarea>
+      </ion-item>
+  
+    </ion-list>
+
+    <!--escanear el qr -->
+    <ion-fab right bottom hideWhen="core,mobileweb">
+        <button ion-fab icon-only (click)="escanearCodigoQR()">
+            <ion-icon name="qr-scanner"></ion-icon>
+        </button>
+    </ion-fab>
+
+  </ion-content>

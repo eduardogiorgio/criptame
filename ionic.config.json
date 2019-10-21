@@ -1,0 +1,7 @@
+{
+  "name": "criptame",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

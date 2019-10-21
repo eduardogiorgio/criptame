@@ -1,0 +1,44 @@
+<!--
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+-->
+<ion-content>
+  <ion-list>
+    <!--
+    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-item>
+      <ion-icon name="ionic" item-start></ion-icon>
+      @ionicframework
+    </ion-item>
+    -->
+    <ion-item>
+        <!--<h2>Ingresa el texto a encriptar</h2>-->
+        <ion-label color="primary" stacked>Ingresa el texto a encriptar</ion-label>
+        <ion-textarea rows="3" placeholder="mi secreto" [(ngModel)]="textoEncriptar" (press)="pegarTexto();"></ion-textarea>
+      </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Ingresa la llave publica</ion-label>
+      <ion-textarea rows="5" placeholder="------BEGIN PUBLIC KEY-----\nMDwwDQYJKoZIhvcNAQEBBQADKwAwKAIhAIG/KYbguKMbJ/F13l712XxduznV/7D6\nK/TqX1a8Yt/rAgMBAAE=\n-----END PUBLIC KEY-----" [(ngModel)]="llaveEncriptar" (press)="pegarLLave()"></ion-textarea>
+    </ion-item>
+    <button ion-button full (click)="encriptar()">
+      Encriptar
+    </button> 
+    <ion-item>
+      <ion-label color="primary" stacked>El texto encriptado es</ion-label>
+      <ion-textarea rows="3" placeholder="Se mostrar el texto encriptado" [(ngModel)]="textoEncriptado" (press)="copiarTexto()" readonly ></ion-textarea>
+    </ion-item>
+
+  </ion-list>
+
+  <!--escanear el qr -->
+  <ion-fab right bottom hideWhen="core,mobileweb">
+      <button ion-fab icon-only (click)="escanearCodigoQR()">
+          <ion-icon name="qr-scanner"></ion-icon>
+      </button>
+  </ion-fab>
+</ion-content>

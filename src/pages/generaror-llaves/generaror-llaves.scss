@@ -1,0 +1,23 @@
+.circle-button-full {
+    margin-top: 10%;
+    width: 60vh;
+    height: 60vh; /*change this and the width
+    for the size of your initial circle*/
+    
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10%;
+    /*make it pretty*/
+    color: #fff;
+    font: 4vh "josefin sans", arial; /*change this
+    for font-size and font-family*/
+    }
+/*
+    .circle-button-full {
+        width:100vw;
+        height: 90vw;
+        border-radius: 50%;
+        color: #fff;
+        font: 5vw "josefin sans", arial; 
+        
+        }*/
